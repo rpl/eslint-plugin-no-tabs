@@ -1,0 +1,39 @@
+{
+  "name": "eslint-plugin-no-tabs",
+  "version": "1.0.0",
+  "description": "Custom eslint rule to prevents tab white spaces in source code",
+  "keywords": [
+    "indent",
+    "eslint",
+    "eslintplugin"
+  ],
+  "homepage": "https://github.com/rpl/eslint-plugin-no-tabs",
+  "bugs": {
+    "url": "https://github.com/rpl/eslint-plugin-no-tabs"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/rpl/eslint-plugin-no-tabs/blob/master/LICENSE"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rpl/eslint-plugin-no-tabs.git"
+  },
+  "main": "./index.js",
+  "scripts": {
+    "test": "node node_modules/.bin/eslint --rulesdir lib ./ && node_modules/.bin/mocha"
+  },
+  "devDependencies": {
+    "eslint": "0.23.0",
+    "eslint-tester": "^0.8.0",
+    "is-my-json-valid": "^2.12.0",
+    "js-yaml": "^3.2.2",
+    "mocha": "^2.2.5"
+  },
+  "maintainers": [
+    {
+      "name": "Luca Greco",
+      "email": "luca.greco@alcacoop.it"
+    }
+  ]
+}

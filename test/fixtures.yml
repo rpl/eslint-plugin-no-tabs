@@ -1,0 +1,39 @@
+indent:
+
+  valid:
+
+    # no indentation
+    - |
+      var a;
+      var b;
+
+    # valid space indentation
+    - |
+      var test = function () {
+        var a;
+      }
+
+  invalid:
+
+    # tab inside indentation whitespaces
+    -
+      code: |
+        var test = function () {
+        	var a;
+        }
+      errors:
+        - message: 'Tabs in whitespace chars.'
+
+    # tabs inside strings
+    -
+      code: |
+        "string with	 tabs"
+      errors:
+        - message: 'Tabs in whitespace chars.'
+
+    # tabs inside comments
+    -
+      code: |
+        /* comments with	 tabs */
+      errors:
+        - message: 'Tabs in whitespace chars.'
